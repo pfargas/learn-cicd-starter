@@ -22,4 +22,6 @@ func GetAPIKey(headers http.Header) (string, error) {
 	return splitAuth[1], nil
 }
 
-func unused() {}
+func unused() {
+	// not used
+}
