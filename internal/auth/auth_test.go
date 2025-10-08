@@ -44,7 +44,7 @@ func TestGetAPIKey(t *testing.T) {
 			headers : http.Header{
 				"authorization": []string{"ApiKey another-key"},
 			},
-			expectedKey: "this-should-break",
+			expectedKey: "",
 			expectedError: ErrNoAuthHeaderIncluded, // Header keys are case-sensitive
 		},
 	}
